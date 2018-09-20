@@ -1,0 +1,55 @@
+<div id="contact-top" class="container">
+  <div class="section">
+    <div class="row">
+      <div class="col s12 center">
+        <h3><i class="mdi-content-send brown-text"></i></h3>
+        <h4>Contact Me</h4>
+        <p class="left-align light">{{intro}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row container">
+  <form class="col s12">
+    <div class="row col s4">
+      <div class="input-field col s12">
+        <input id="name" name="name" type="text" class="validate" required="" (input)="message.name=$event.target.value">
+        <label for="name">Name</label>
+      </div>
+      <div class="input-field col s12">
+        <input id="email" type="email" class="validate" required="" (input)="message.email=$event.target.value">
+        <label for="email">Email</label>
+      </div>
+      <div class="input-field col s12">
+        <input id="subject" type="text" class="validate" (input)="message.subject=$event.target.value">
+        <label for="subject">Subject</label>
+      </div>
+    </div>
+    <div class="row col s8">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">mode_edit</i>
+        <textarea id="contacts-text-area" class="materialize-textarea" required="" (input)="textarea=$event.target.value"></textarea>
+        <label for="contacts-text-area">Your Message</label>
+      </div>
+      <div id="btn-contacts-div" class="col s10 m11">
+        <button class="btn waves-effect waves-light col s12" type="submit" name="action" (click)="onSubmit()">Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<!--<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="../assets/background3.jpg" alt="Unsplashed background img 3"></div>
+</div>-->

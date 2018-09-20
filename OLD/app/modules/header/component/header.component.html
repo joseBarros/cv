@@ -1,0 +1,19 @@
+<nav id="nav-container" class="white" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="#" class="brand-logo">Logo</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a  routerLinkActive="active" routerLink="/home" (click)="scrollHome()">About me</a></li>
+      <li><a>Education</a></li>
+      <li><a>Work Experience</a></li>
+      <li><a>Personal Skills</a></li>
+      <li><a (click)="scrollContacts()" >Contact Me</a></li>
+    </ul>
+
+    <ul id="nav-mobile" class="side-nav">
+      <li><a  routerLinkActive="active" routerLink="/home" (click)="scrollHome()">About</a></li>
+      <li><a>Resume</a></li>
+      <li><a (click)="scrollContacts()" >Contact Me</a></li>
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
